@@ -1,0 +1,8 @@
+1-  gitbash
+2- cat pokemons.txt
+3-  grep Pikachu pokemons.txt
+4-  grep  -B 2 Pikachu pokemons.txt
+5-  grep  -A 3 Pikachu pokemons.txt
+6- head -n 152 pokemons.txt
+7- tail -n 101 pokemons.txt
+
