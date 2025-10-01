@@ -1,4 +1,4 @@
- const primeiroNumero = 10
+ primeiroNumero = 10
  const segundoNumero = 20 
 
  console.log(primeiroNumero+segundoNumero+4)
