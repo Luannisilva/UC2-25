@@ -1,4 +1,4 @@
-const a = true
+/*const a = true
 const b = false
 const c = true
 
@@ -47,17 +47,54 @@ console.log("seu nome é",nome ," voce  tem " ,idade," anos",
 console.log("c") vai imprimir c, true console.log("d") vai imprimir d, boolean */  
 
 
-let primeiroNumero = prompt(" digite um numero !")
-let segundoNumero = prompt(" digite outro numero !")
 
-const soma = primeiroNumero = segundoNumero
- console.log(soma)
+  /*o  prompt let primeiroNumero  vai perguntar um numero e o outro 
+let primeiroNumero =prompt(" digite um numero !")
+let segundoNumero =prompt(" digite outro numero !")
+primeiroNumero = Number(primeiroNumero)
+segundoNumero = Number(segundoNumero)
+
+ const soma= primeiroNumero+segundoNumero
+ console.log(soma)*/
+
+
 
   /*o  prompt let primeiroNumero  vai perguntar um numero e o outro 
  prompt do segundoNumero vai perguntar outro numero
    o const soma vai  somar o primeiro numero e o segundo 
-    o console.log(soma) vai imprimir a soma dos o primeiro numero 
-    +  o segundo numero  */ 
+    o console.log(soma) vai imprimir a soma do  primeiro numero 
+    + o segundo numero  */ 
+
+
+
+    /* idade= prompt(" qual sua idade")
+     idadeDoAmigo = prompt("qual a idade d seu amigo(a)")
+  maiorOuMenor= idade === idadeDoAmigo
+  console.log("sua idade é maior do que a do seu melhor amigo", maiorOuMenor)
+ console.log("a diferencia de idade é de",idade  % idadeDoAmigo)
+
+ numeroPar=prompt(" me de um numero par")
+ console.log(numeroPar % 2)
+  // Quando colocamos um numero par sempre da 0
+  //Quando colocamos impar  da  sempre 1*/
+
+
+  idadeEmAnos= prompt("qual sua idade em anos")
+
+  idadeEmMeses= idadeEmAnos * 12
+  idadeEmDias = idadeEmAnos * 365
+  idadeEmHoras = idadeEmAnos * 24
+   idadeEmdias1 = idadeEmMeses *idadeEmDias
+   idadeEmHoras1 = idadeEmdias1* idadeEmHoras
+ 
+  console.log("A idade do usuário em meses;", idadeEmMeses  )
+  console.log("A idade do usuário em dias;",idadeEmdias1)
+  console.log("A idade do usuário em horas;",idadeEmHoras1 ) 
+ 
+
+
+
+
 
 
 
