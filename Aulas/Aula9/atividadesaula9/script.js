@@ -1,4 +1,4 @@
-/*const a = true
+const a = true
 const b = false
 const c = true
 
@@ -43,19 +43,19 @@ console.log("seu nome é",nome ," voce  tem " ,idade," anos",
   resultado = !resultado && (bool1 || bool2)
   console.log("c",resultado)
   console.log("d",typeof resultado)
+  
 /* o console.log("a") vai imprimir  a,  false console.log("b") vai imprimir  b ,false 
 console.log("c") vai imprimir c, true console.log("d") vai imprimir d, boolean */  
 
 
-
-  /*o  prompt let primeiroNumero  vai perguntar um numero e o outro 
+  
 let primeiroNumero =prompt(" digite um numero !")
 let segundoNumero =prompt(" digite outro numero !")
 primeiroNumero = Number(primeiroNumero)
 segundoNumero = Number(segundoNumero)
 
  const soma= primeiroNumero+segundoNumero
- console.log(soma)*/
+ console.log(soma)
 
 
 
@@ -67,16 +67,16 @@ segundoNumero = Number(segundoNumero)
 
 
 
-    /* idade= prompt(" qual sua idade")
-     idadeDoAmigo = prompt("qual a idade d seu amigo(a)")
-  maiorOuMenor= idade === idadeDoAmigo
+     idade = Number(prompt(" qual sua idade"))
+     idadeDoAmigo = Number(prompt)("qual a idade d seu amigo(a)")
+  maiorOuMenor= idade > idadeDoAmigo
   console.log("sua idade é maior do que a do seu melhor amigo", maiorOuMenor)
- console.log("a diferencia de idade é de",idade  % idadeDoAmigo)
+ console.log("a diferencia de idade é de",idade  - idadeDoAmigo)
 
  numeroPar=prompt(" me de um numero par")
  console.log(numeroPar % 2)
   // Quando colocamos um numero par sempre da 0
-  //Quando colocamos impar  da  sempre 1*/
+  //Quando colocamos impar  da  sempre 1
 
 
   idadeEmAnos= prompt("qual sua idade em anos")
@@ -91,15 +91,4 @@ segundoNumero = Number(segundoNumero)
   console.log("A idade do usuário em dias;",idadeEmdias1)
   console.log("A idade do usuário em horas;",idadeEmHoras1 ) 
  
-
-
-
-
-
-
-
-
-
-
-
 
