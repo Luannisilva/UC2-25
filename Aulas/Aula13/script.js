@@ -87,8 +87,188 @@ console.log("Palavras mais longas:", frase)
 
     
 
-    let valor = 0 
+   /* let valor = 0 
     for (let i =0 ; i < 5 ; i++){
       valor+=i
     }
-    console.log(valor)
+    console.log(valor)*/
+
+   /*  esse for esta calculando a soma dos números
+    inteiros  do 0 a 4 no  console.log(valor)  vai ser impirmir 10 .*/
+
+
+     /*const lista = [10,11,12,15,18,19,21,23,25,27,30]
+     for (let numero of lista){
+      if (numero > 18) {
+         console.log(numero)
+      }
+     }
+       o  for esta pedindo  para ele escolher somente
+      os numeros maiores que 18 
+      a) O que vai ser impresso no console? 
+      no console.log(numero) vai imprimir  19, 21, 23, 25, 27, 30  
+       b) Se eu quisesse acessar o índice de cada elemento dessa
+lista, o for...of... é suficiente? Se sim, o que poderia ser
+usado para fazer isso?  vai precisar do indici [i]*/
+
+ /*const qunatidadeTotal = Number(prompt("digite a quantidade de linhas ?"))
+let qunatidadeAtual = 0 
+while (qunatidadeAtual < qunatidadeTotal) {
+   let = ""
+   for (let asteriscos = 0 ; asteriscos < qunatidadeAtual + 1 ; asteriscos++){
+   linha +="*"
+   }
+   console.log(linha)
+   qunatidadeAtual++ 
+}
+3. Qual seria o resultado impresso no console, se o usuário
+digitasse o número 4  ? nao iprimiria nada pois tem um erro no segundo let   
+ */
+
+const quantidadePets = Number(prompt("Quantos bichinhos de estimação você tem?"));
+
+if (quantidadePets === 0) {
+    console.log("Que pena! Você pode adotar um pet!")
+} else if (quantidadePets > 0) {
+    const nomesPets = [] 
+    for (let i = 0; i < quantidadePets; i++) {
+        const nome = prompt(`Digite o nome do pet ${i + 1}:`)
+        nomesPets.push(nome)  
+    }
+    console.log("Nomes dos seus bichinhos de estimação são ", nomesPets)
+} else {
+    console.log("Por favor, digite um número válido (0 ou maior).")
+}
+
+const arrayOriginal = [10, 20, 30, 40, 50]
+let maior = arrayOriginal[0]
+let menor = arrayOriginal[0]
+const arrayPares = []
+console.log(" Valores do array original")
+for (let numero of arrayOriginal) {
+    console.log(numero)
+}
+console.log(" Valores divididos por 10")
+for (let numero of arrayOriginal) {
+    console.log(numero / 10)
+}
+
+
+for (let numero of arrayOriginal) {
+    if (numero % 2 === 0) {
+        arrayPares.push(numero)
+    }
+}
+console.log(arrayPares)
+
+console.log(" Novo array com strings")
+const arrayStrings = []
+for (let i = 0; i < arrayOriginal.length; i++) {
+    arrayStrings.push(`O elemento do índex ${i} é: ${arrayOriginal[i]}`)
+}
+console.log(arrayStrings)
+
+
+for (let numero of arrayOriginal) {
+    if (numero > maior) maior = numero
+    if (numero < menor) menor = numero
+}
+console.log(`Maior: ${maior}, Menor: ${menor}`)
+
+
+
+
+
+// desafio 1 
+let numeroSecreto = Number(prompt("Primeiro jogador, digite o número secreto:"))
+console.log("Vamos jogar!")
+let tentativas = 0
+let chute
+do {
+    chute = Number(prompt("Segundo jogador, chute um número:"))
+    tentativas++
+    console.log(`O número chutado foi: ${chute}`)
+    if (chute === numeroSecreto) {
+        console.log("Acertou!!")
+        console.log(`O número de tentativas foi: ${tentativas}`)
+    } else if (chute < numeroSecreto) {
+        console.log("Errrrrrrrou, é maior!")
+    } else {
+        console.log("Errrrrrrrou, é menor!")
+    }
+} while (chute !== numeroSecreto)
+
+// desafio 2 
+
+let numeroSecreto1 = Math.floor(Math.random() * 100) + 1;
+
+
+console.log("Vamos jogar!");
+do {
+    
+    chute = Number(prompt("Chute um número entre 1 e 100:"))
+    tentativas++
+    console.log(`O número chutado foi: ${chute}`)
+    if (chute === numeroSecreto1) {
+        console.log("Acertou!!")
+        console.log(`O número de tentativas foi: ${tentativas}`)
+    } else if (chute < numeroSecreto1) {
+        console.log("Errrrrrrrou, é maior!")
+    } else {
+        console.log("Errrrrrrrou, é menor!")
+    }
+} while (chute !== numeroSecreto1) 
+
+/*Quando resolver o exercício, pare e faça a seguinte reflexão: foi fácil fazer esta
+alteração?
+ sim  O que você poderia ter feito para que fosse mais fácil? nao sei 
+  Deixe
+comentários no seu código sobre esta reflexão. mas achei bem facil pois era so colocar a dica  q vc deu, e despois tiar o segundo jogador  */
+
+
+let vida = 1
+let recursos = 0
+let rodadasExploradas = 0
+
+console.log("Jogo iniciado! Vida: 1, Recursos: 0")
+
+while (recursos < 10 && vida > 0) {
+   
+    rodadasExploradas++
+    
+    let chance = Math.random() 
+    
+    if (chance < 0.5) {
+        
+        recursos++
+        console.log(`Rodada ${rodadasExploradas}: Encontrou um recurso! Recursos totais: ${recursos}`)
+    } else if (chance < 0.75) {
+   
+        console.log(`Rodada ${rodadasExploradas}: Encontrou um perigo! Vida permanece: ${vida}`)
+    } else {
+       
+        vida--
+        console.log(`Rodada ${rodadasExploradas}: Encontrou  um  Gamemaker ! vida reduzida para ${vida}`)
+        if (vida <= 0 ){
+         console.log("Os gamemakers acabaram com o jogo !")
+
+        }}}
+         console.log("jogo terminado!")
+         console.log(`recursos  coletados ${recursos}`)
+         console.log(` Rodadas exploradas${rodadasExploradas}`)
+         if (vida <= 0 ){
+            console.log("voce morreu!")
+         } else{
+            console.log(" voce sobreviveu !")
+         }
+
+
+
+
+
+
+
+
+
+
+
