@@ -71,23 +71,20 @@ console.log("A soma dos numeros pares é  ",numeros1)
 
 let palavraMaior = 0 
 let frase = ["O sucesso é a soma de pequenos esforços repetidos todos os dias e Ser corajoso não é não ter medo, é avançar apesar dele"]
-for (let palavra of frase) {
-   let comprimento = palavra.length;
-   if (comprimento > palavraMaior) {
-    
-      palavraMaior = comprimento;
-      frase = palavra;
-  } else if (comprimento === palavraMaior) {
-      
-      frase.push(palavra);
-  }
+for (const palavra of frase) {
+    if (palavra.length > palavraMaior) {
+        palavraMaior = palavra.length;
+    }
 }
-
-console.log("Palavras mais longas:", frase)
-
-    
-
-   /* let valor = 0 
+const palavrasMaisLongas = []
+for (const palavra of frase) {
+    if (palavra.length === palavraMaior) {
+        palavrasMaisLongas.push(frase);
+    }
+}
+console.log("Palavras mais longas:", palavrasMaisLongas) 
+   
+/* let valor = 0 
     for (let i =0 ; i < 5 ; i++){
       valor+=i
     }
@@ -109,7 +106,7 @@ console.log("Palavras mais longas:", frase)
       no console.log(numero) vai imprimir  19, 21, 23, 25, 27, 30  
        b) Se eu quisesse acessar o índice de cada elemento dessa
 lista, o for...of... é suficiente? Se sim, o que poderia ser
-usado para fazer isso?  vai precisar do indici [i]*/
+usado para fazer isso?  não vai precisar do indexOf lista .indexOf (valor(15))*/
 
  /*const qunatidadeTotal = Number(prompt("digite a quantidade de linhas ?"))
 let qunatidadeAtual = 0 
@@ -122,8 +119,8 @@ while (qunatidadeAtual < qunatidadeTotal) {
    qunatidadeAtual++ 
 }
 3. Qual seria o resultado impresso no console, se o usuário
-digitasse o número 4  ? nao iprimiria nada pois tem um erro no segundo let   
- */
+digitasse o número 4  ? * ** *** **** 
+ 
 
 const quantidadePets = Number(prompt("Quantos bichinhos de estimação você tem?"));
 
@@ -136,7 +133,7 @@ if (quantidadePets === 0) {
         nomesPets.push(nome)  
     }
     console.log("Nomes dos seus bichinhos de estimação são ", nomesPets)
-} else {
+} /*  else {
     console.log("Por favor, digite um número válido (0 ou maior).")
 }
 
@@ -152,8 +149,6 @@ console.log(" Valores divididos por 10")
 for (let numero of arrayOriginal) {
     console.log(numero / 10)
 }
-
-
 for (let numero of arrayOriginal) {
     if (numero % 2 === 0) {
         arrayPares.push(numero)
@@ -174,10 +169,6 @@ for (let numero of arrayOriginal) {
     if (numero < menor) menor = numero
 }
 console.log(`Maior: ${maior}, Menor: ${menor}`)
-
-
-
-
 
 // desafio 1 
 let numeroSecreto = Number(prompt("Primeiro jogador, digite o número secreto:"))
@@ -223,7 +214,7 @@ do {
 alteração?
  sim  O que você poderia ter feito para que fosse mais fácil? nao sei 
   Deixe
-comentários no seu código sobre esta reflexão. mas achei bem facil pois era so colocar a dica  q vc deu, e despois tiar o segundo jogador  */
+comentários no seu código sobre esta reflexão. mas achei bem facil pois era so colocar a dica  q vc deu, e despois tiar o segundo jogador  
 
 
 let vida = 1
@@ -260,15 +251,50 @@ while (recursos < 10 && vida > 0) {
             console.log("voce morreu!")
          } else{
             console.log(" voce sobreviveu !")
-         }
+        }
+*/
 
 
 
 
 
 
+    // atividades de for of 
+
+      // contador simples 
+      for (let i = 1 ; i<= 10 ; i++){
+        console.log(i)
+      }
+// contador de pares 
+ for(let i = 1 ; i <= 20 ;i += 2  ){
+    console.log(i)
+ }
 
 
+ // Tabuada 
+  let numero =
+  Number(prompt(" Digite um numero para aparecer a tabuada "))
+  for(let i = 1 ; i <= 10 ; i++){
+    console.log(`${numero} X ${i} = ${numero* i}`)
+  } 
 
+  // soma de numeros 
+  let soma = 0 
+  for ( let i = 0 ; i<5 ; i++){
+    let numero = 
+    Number(prompt(`Digite o ${i +1}ºnumero`))
+    soma+= numero
+  }
+  console.log(`A soma  dos  numeros  é ${soma}`)
 
+  // media de notas 
+  let somaNotas = 0 
+  for (let i= 0 ;  i > 5 ; i++){
+    let nota =
+    Number(prompt(`Digite a nota do ${i+1}ºaluno`))
+  }
+  let media = somaNotas / 5 
+  console.log(` A media das notas é ${media}`)
+
+  // 
 
