@@ -252,7 +252,7 @@ while (recursos < 10 && vida > 0) {
          } else{
             console.log(" voce sobreviveu !")
         }
-*/
+
 
 
 
@@ -266,13 +266,13 @@ while (recursos < 10 && vida > 0) {
         console.log(i)
       }
 // contador de pares 
- for(let i = 1 ; i <= 20 ;i += 2  ){
+ for(let i = 2 ; i <= 20 ;i += 2  ){
     console.log(i)
  }
 
 
  // Tabuada 
-  let numero =
+  let numero 
   Number(prompt(" Digite um numero para aparecer a tabuada "))
   for(let i = 1 ; i <= 10 ; i++){
     console.log(`${numero} X ${i} = ${numero* i}`)
@@ -281,7 +281,7 @@ while (recursos < 10 && vida > 0) {
   // soma de numeros 
   let soma = 0 
   for ( let i = 0 ; i<5 ; i++){
-    let numero = 
+    let numero 
     Number(prompt(`Digite o ${i +1}ºnumero`))
     soma+= numero
   }
@@ -290,11 +290,93 @@ while (recursos < 10 && vida > 0) {
   // media de notas 
   let somaNotas = 0 
   for (let i= 0 ;  i > 5 ; i++){
-    let nota =
+    let nota 
     Number(prompt(`Digite a nota do ${i+1}ºaluno`))
   }
   let media = somaNotas / 5 
   console.log(` A media das notas é ${media}`)
 
-  // 
+  // Jogo da força
+const palavras  = [ kawazaki,BMW,DogRam,Koenigsegg,GTR35 ]
+let palavra = palavras[Math.random()* palavras.length]
+let palavraOculta = "GTR35"
+let tentativas = 6 
+let letrasTentadas = []
 
+ while(tentativas > 0){
+    
+    console.log(`Palavra ${palavraOculta}`)
+    console.log(`Tentativas restantes ${tentativas}`)
+    console.log(` letras tentadas ${letrasTentadas(",")}`)
+ }
+let letra = prompt("Digite uma letra ").toLowerCase()*/
+
+
+function nomeDaTurma() {
+    console.log("Bem vindos turma UC25-2N")
+}
+function somar() {
+    soma =10+30
+    console.log("a soma é ", soma)
+}
+
+function dobrarNumeros() {
+    dobro = 10*2
+    console.log(" o dorbro de 10 é",dobro)
+}
+
+nomeDaTurma()
+somar()
+dobrarNumeros()
+
+
+nomeDaTurma()
+somar()
+dobrarNumeros()
+
+function nomes(nome) {
+    console.log(`Ola ${nome}`)
+}
+ function parametros(num1,num2) {
+    soma = num1+num2
+    console.log(` a soma é ${soma}`)
+ }
+ nomes("luanni")
+ nomes("lucas")
+ nomes("leandra")
+ parametros(7,3)
+
+ const a  = 1
+ function imprimiVriavel() {
+    const b = 2 
+    
+console.log("a variavel a :",a)
+console.log(" a varivael b : ", b )    
+ } 
+ imprimiVriavel()
+ console.log("a variavel a :",a)
+  
+ function calcularArea(altura,largura) {
+    let area = altura*largura 
+    return area
+    
+ }
+
+ const somaDaArea= calcularArea(2,3)
+ console.log(somaDaArea)
+ console.log(calcularArea(2,3))
+
+ function somaDeDoisNumeros() {
+    let soma  =10 + 30
+    return soma
+ }
+ const resultado = somaDeDoisNumeros()
+ console.log(somaDeDoisNumeros)
+ 
+ const numeros = [10,20,30,40,50]
+  function numerosDaArray() {
+     return numeros = [60,70]
+    
+  }
+  const final = numerosDaArray()
+  console.log([i=0] % [i=6])
